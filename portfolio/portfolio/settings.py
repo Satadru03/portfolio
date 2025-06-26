@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-!rbbdo(&^poa*bmgqhh^rae__2ao0f^)%wv=kfgfc@(rcb@jp2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['http://satadru03.pythonanywhere.com/']
+ALLOWED_HOSTS = ['Satadru03.pythonanywhere.com']
 
 
 # Application definition
@@ -57,7 +57,7 @@ ROOT_URLCONF = 'portfolio.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR, 'templates'],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
