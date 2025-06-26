@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-!rbbdo(&^poa*bmgqhh^rae__2ao0f^)%wv=kfgfc@(rcb@jp2
 DEBUG = False
 
 ALLOWED_HOSTS = ['Satadru03.pythonanywhere.com']
-
+#ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
 # Application definition
 
