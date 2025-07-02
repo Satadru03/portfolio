@@ -98,4 +98,4 @@ def index(request):
 
     # testimonials = [testimonial1, testimonial2]
 
-    return render(request, 'index.html', {'facts': facts, 'skills_row': skills_row, 'services': services, 'year': datetime.now().year})
+    return render(request, 'index.html', {'facts': facts, 'skills_row': skills_row, 'services': services, 'year': datetime.now().year, 'age' : datetime.now().year - 2003})

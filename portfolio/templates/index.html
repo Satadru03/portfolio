@@ -10,8 +10,7 @@
   <title>Satadru's Portfolio</title>
   <meta name="description" content="Explore the portfolio of Satadru Halder, a Final Year B.Tech student at IIIT Kalyani and AI/ML enthusiast experienced in machine learning, data analytics, Python, and embedded systems. Passionate about data-driven innovation and real-world problem-solving.">
 
-  <meta name="keywords" content="Django, Python, Machine Learning, Data Science, Artificial Intelligence, Portfolio">
-
+  <meta name="keywords" content="Satadru Halder, Python, Machine Learning, Data Science, AI, Artificial Intelligence, Computer Vision, NLP, Data Analytics, AI Engineer, Portfolio, IIIT Kalyani, ML Projects, Resume, GitHub">
 
   <!-- Favicons -->
   <link href="{% static 'assets/img/favicon.jpg' %}" rel="icon">
@@ -112,16 +111,10 @@
             <div class="row">
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>3 April 2003</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> 
                     <a href="https://satadru03.pythonanywhere.com/" target="_blank">Portfolio URL</a></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91 8240097964</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Kolkata, West Bengal, India</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>22</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>{{ age }}</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>B.Tech in ECE (IIIT Kalyani)</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>satadruhalder03@gmail.com</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Status:</strong> <span>Open to AI/ML and Data roles</span></li>
@@ -218,7 +211,6 @@
               <p><em>Driven final-year B.Tech student with practical experience in analyzing data and crafting machine learning solutions. Skilled in Python, data analytics, and predictive modeling, I excel at transforming messy data into actionable insights. Ready to contribute my analytical mindset and teamwork to create real-world impact.</em></p>
               <ul>
                 <li>Kolkata, West Bengal, India</li>
-                <li>(+91) 8240097964</li>
                 <li>satadruhalder03@gmail.com</li>
               </ul>
             </div>
@@ -307,7 +299,7 @@
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">Data Science</li>
+              <li data-filter=".filter-app">Data Science</li> 
               <li data-filter=".filter-card">AI-ML</li>
               <li data-filter=".filter-web">IoT</li>
             </ul>
@@ -315,8 +307,8 @@
         </div>
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <!-- class filter-app for Data Science, filter-card for AI-ML, filter-web for IOT -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app"> 
             <div class="portfolio-wrap">
               <img src="{% static 'assets/img/portfolio/portfolio-1.png' %}" class="img-fluid" alt="Personal Finance Dashboard">
               <div class="portfolio-links">
@@ -455,7 +447,7 @@
               <div class="address">
                 <i class="bi bi-geo-alt"></i>
                 <h4>Location:</h4>
-                <p>Kolkata, West Bengal, India 700063</p>
+                <p>Kolkata, West Bengal, India</p>
               </div>
 
               <div class="email">
@@ -467,10 +459,11 @@
               <div class="phone">
                 <i class="bi bi-phone"></i>
                 <h4>Call:</h4>
-                <p>+91 8240097964</p>
+                <p>+91 xxxxxxxxxx</p>
               </div>
 
-              <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d16591.27117255132!2d88.31228024524935!3d22.458766905084385!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjLCsDI3JzQ0LjAiTiA4OMKwMTgnNTQuOCJF!5e0!3m2!1sen!2sus!4v1705401136993!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117925.35231262601!2d88.2649512406422!3d22.535406374655192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f882db4908f667%3A0x43e330e68f6c2cbc!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1751466673160!5m2!1sen!2sin" 
+              frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
             </div>
 
           </div>
