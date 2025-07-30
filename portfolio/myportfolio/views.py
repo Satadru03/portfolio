@@ -26,7 +26,7 @@ def index(request):
         except Exception as e:
             messages.error(request, f"Something went wrong: {str(e)}")
 
-        return redirect('home')  # reload the same page (update URL name accordingly)
+        return redirect('index')  # reload the same page (update URL name accordingly)
 
     # Your usual homepage content
     fact1 = Fact(heading='Years of Experience', emoji='bi bi-calendar', count=0, data_delay=0)
