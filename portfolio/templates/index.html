@@ -203,7 +203,7 @@
 
         <!-- Download CV Button -->
         <div class="d-flex justify-content-center mt-3">
-          <a href="{% static 'assets/Satadru_Halder_CV.pdf' %}" target="_blank" class="btn btn-outline-primary me-2">View Resume</a>
+          <a href="{% static 'assets/Satadru_Halder_CV.pdf' %}" target="_blank" class="btn btn-outline-primary me-2">View CV</a>
           <a href="{% static 'assets/Satadru_Halder_CV.pdf' %}" class="btn btn-primary" download>Download CV</a>
         </div>
 
@@ -471,9 +471,18 @@
             </div>
 
           </div>
+          
+          {% if messages %}
+            {% for message in messages %}
+              <div class="alert alert-{{ message.tags }}">
+                {{ message }}
+              </div>
+            {% endfor %}
+          {% endif %}
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="{% url 'contact' %}" method="post" class="php-email-form">
+              {% csrf_token %}
               <div class="row">
                 <div class="form-group col-md-6">
                   <label for="name">Your Name</label>
