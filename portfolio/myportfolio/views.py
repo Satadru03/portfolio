@@ -12,7 +12,7 @@ def index(request):
         subject = request.POST.get('subject')
         message = request.POST.get('message')
 
-        full_message = f"From: {name} <{email}>\n\n{message}"
+        full_message = f"From: {name} <{email}>\n Subject: {subject}\n\n{message}"
 
         try:
             send_mail(
