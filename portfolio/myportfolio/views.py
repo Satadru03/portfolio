@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from .models import Fact, Skill, Service
 from datetime import datetime
+from django.conf import settings
 from django.core.mail import send_mail
 from django.contrib import messages
 
@@ -18,7 +19,7 @@ def index(request):
             send_mail(
                 subject,
                 full_message,
-                email,  # from email
+                settings.DEFAULT_FROM_EMAIL,  # from email
                 ['satadru03@gmail.com'], # to email
                 fail_silently=False,
             )
